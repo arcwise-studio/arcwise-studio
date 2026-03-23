@@ -1,0 +1,30 @@
+{
+  "client": {
+    "company": "Launchly",
+    "contact": "Maya Reed",
+    "email": "maya@launchly.com"
+  },
+  "project": {
+    "name": "Launchly Conversion Sprint",
+    "summary": "Three-week sprint to build and optimize the launch funnel for Launchly OS.",
+    "deliverables": [
+      "Audience + message workshop",
+      "Modular landing page system",
+      "SEO content playbook",
+      "HubSpot + analytics handoff"
+    ],
+    "timeline_weeks": 3,
+    "investment": 18500
+  },
+  "metrics": [
+    { "label": "Current site conversion", "value": "2.3%" },
+    { "label": "Target conversion", "value": "3.5%" },
+    { "label": "Success KPI", "value": "+35% qualified demos" }
+  ],
+  "next_steps": [
+    "Approve scope & sign agreement",
+    "Kickoff workshop (60 min)",
+    "Prototype delivery (Day 5)",
+    "QA + launch (Day 18)"
+  ]
+}

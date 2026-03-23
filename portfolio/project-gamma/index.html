@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spectral Labs · Science Marketing Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Spectral Labs</h1>
+    <p>CMS-ready content blocks and long-form storytelling for a biotech R&D team.</p>
+  </header>
+  <main class="layout">
+    <aside class="nav">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="insight">Insight</button>
+      <button class="tab" data-tab="method">Method</button>
+      <button class="tab" data-tab="cta">CTA</button>
+    </aside>
+    <section class="canvas">
+      <article id="overview" class="panel show">
+        <h2>Breakthrough results, explained clearly</h2>
+        <p>Modular hero layout with stat cards and featured publication CTA, editable from Sanity CMS.</p>
+      </article>
+      <article id="insight" class="panel">
+        <h2>Interactive insight block</h2>
+        <p>TL;DR accordion plus data viz, auto-sync'd from Airtable via serverless cron.</p>
+      </article>
+      <article id="method" class="panel">
+        <h2>Method timeline</h2>
+        <p>Scroll-linked animation showing each research milestone with WebGL molecule preview.</p>
+      </article>
+      <article id="cta" class="panel">
+        <h2>Action bar</h2>
+        <p>Sticky call-to-action with calendly embed + PDF download, improving consultation rate by 27%.</p>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

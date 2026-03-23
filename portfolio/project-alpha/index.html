@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northwind Freight · Smart Quote Funnel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Northwind Freight</h1>
+    <p>Multi-step quote funnel for international logistics. Built with vanilla JS, progressive enhancement, and HubSpot sync.</p>
+  </header>
+
+  <main class="app">
+    <form id="quoteForm" class="card">
+      <div class="step active" data-step="1">
+        <h2>Step 1 · Shipment Basics</h2>
+        <label>
+          Cargo type
+          <select name="cargo" required>
+            <option value="">Select</option>
+            <option>Temperature controlled</option>
+            <option>Dry goods</option>
+            <option>Hazardous</option>
+          </select>
+        </label>
+        <label>
+          Origin port
+          <input type="text" name="origin" placeholder="Los Angeles" required />
+        </label>
+        <button type="button" class="btn" data-next>Continue →</button>
+      </div>
+      <div class="step" data-step="2">
+        <h2>Step 2 · Transit Speed</h2>
+        <label>
+          Speed
+          <input type="range" min="1" max="3" name="speed" value="2" />
+          <span class="range-hint">Express</span>
+        </label>
+        <label>
+          Insurance required?
+          <input type="checkbox" name="insurance" /> Include cargo protection
+        </label>
+        <div class="nav">
+          <button type="button" class="btn btn--ghost" data-prev>← Back</button>
+          <button type="button" class="btn" data-next>Continue →</button>
+        </div>
+      </div>
+      <div class="step" data-step="3">
+        <h2>Step 3 · Contact</h2>
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Work email
+          <input type="email" name="email" required />
+        </label>
+        <div class="nav">
+          <button type="button" class="btn btn--ghost" data-prev>← Back</button>
+          <button type="submit" class="btn">Get quote</button>
+        </div>
+      </div>
+      <p id="status" class="status"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

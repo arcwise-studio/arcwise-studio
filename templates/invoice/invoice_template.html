@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arcwise Studio Invoice Template</title>
+  <style>
+    :root {
+      font-family: "Inter", system-ui, sans-serif;
+      color: #0f172a;
+    }
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: #f5f6fb;
+    }
+    .invoice {
+      max-width: 720px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.75rem 0;
+    }
+    th {
+      color: #64748b;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    tr + tr {
+      border-top: 1px solid #e2e8f0;
+    }
+    .totals {
+      margin-top: 1.5rem;
+      display: grid;
+      gap: 0.5rem;
+      justify-content: flex-end;
+    }
+    .totals div {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+    .notes {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice">
+    <header>
+      <div>
+        <h1>Arcwise Studio</h1>
+        <p>hello@arcwisestudio.com<br />+1 (555) 123-4567</p>
+      </div>
+      <div>
+        <p><strong>Invoice #:</strong> 2024-001</p>
+        <p><strong>Date:</strong> May 10, 2024</p>
+        <p><strong>Due:</strong> May 24, 2024</p>
+      </div>
+    </header>
+    <section>
+      <p><strong>Bill to:</strong><br />Launchly<br />Maya Reed<br />maya@launchly.com</p>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Rate</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Landing page sprint</td>
+          <td>1</td>
+          <td>$12,000</td>
+          <td>$12,000</td>
+        </tr>
+        <tr>
+          <td>SEO optimization</td>
+          <td>1</td>
+          <td>$3,000</td>
+          <td>$3,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="totals">
+      <div><span>Subtotal</span><span>$15,000</span></div>
+      <div><span>Tax</span><span>$0</span></div>
+      <div><span>Amount due</span><span>$15,000</span></div>
+    </div>
+    <p class="notes">Payment via ACH preferred. Wiring info in onboarding packet.</p>
+  </div>
+</body>
+</html>
