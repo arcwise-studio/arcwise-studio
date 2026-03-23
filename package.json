@@ -1,0 +1,12 @@
+{
+  "name": "arcwise-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "vercel-build": "echo 'static site'"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^19.8.5"
+  }
+}
